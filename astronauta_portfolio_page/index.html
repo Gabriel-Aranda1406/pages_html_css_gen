@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header__bg">
+        <nav class="header container">
+          <a href="#" class="soon">Universe</a>
+          <ul class="menu">
+            <li class="item">
+              <a href="#">Home</a>
+            </li>
+            <li class="item">
+              <a href="#about">Sobre</a>
+            </li>
+            <li class="item">
+              <a href="#contact">Contate Me</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main__bg">
+        <div class="main container">
+          <section id="welcome">
+            <div class="welcome__content">
+              <h2 class="subtitle">Bem Vindo a um Novo Universo</h2>
+              <h1 class="title">Diferentes mundos para diferentes pessoas</h1>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur adipsicing elit. Quod
+                error veniam in voluptatem magni quisquam
+              </p>
+              <a
+                href="https://github.com/Gabriel-Aranda1406"
+                target="_blank"
+                class="btn"
+                >Explore</a
+              >
+            </div>
+            <div class="welcome__image">
+              <img src="./assets/astronauta.svg" alt="Astronauta" />
+            </div>
+          </section>
+          <section id="about">
+            <div class="about__content">
+              <h1 class="title">Quem sou eu?</h1>
+              <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+                perferendis iste rerum alias repudiandae quasi ab dolor
+                obcaecati cumque soluta ipsum amet consectetur adipisicing.
+              </p>
+              <div class="github_info">
+                <a
+                  class="btn"
+                  href="https://github.com/jorgeguedess"
+                  target="_blank"
+                  >Github</a
+                >
+                <span id="followers">66 Seguidores</span>
+                <span id="repositories">48 Repositórios</span>
+              </div>
+            </div>
+            <div class="about__image">
+              <img
+                src="assets/img_gabriel.jpeg"
+                alt="Imagem de um avatar padrão"
+              />
+            </div>
+          </section>
+          <section id="contact">
+            <div class="contact__content">
+              <h1 class="title">Me Contate</h1>
+              <p class="description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+                assumenda quam esse eos minus placeat maiores, deserunt quas,
+                molestiae explicabo error, optio distinctio perspiciatis aut
+                ullam earum voluptas repellendus iusto. Lorem ipsum dolor sit
+                amet consectetur, adipisicing elit. Veritatis, enim?
+              </p>
+              <address aria-label="Redes Sociais">
+                <ul class="links">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/gabriel-arandaa"
+                      target="_blank"
+                      class="social_link"
+                    >
+                      <img
+                        src="./assets/linkedin.svg"
+                        alt="Linkedin Gabriel Aranda"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/Gabriel-Aranda1406"
+                      target="_blank"
+                      class="social_link"
+                    >
+                      <img
+                        src="./assets/github.svg"
+                        alt="Github Gabriel Aranda"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/biel_aranda1998"
+                      target="_blank"
+                      class="social_link"
+                    >
+                      <img
+                        src="./assets/instagram.svg"
+                        alt="Instagram Gabriel Aranda"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="contact__form">
+              <form
+                action="https://formsubmit.co/gabriel.aranda@hotmail.com"
+                method="POST"
+                class="form"
+              >
+                <div class="input_group">
+                  <label for="name">Nome:</label>
+                  <input type="text" name="name" id="name" required />
+                </div>
+                <div class="input_group">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="fulano@email.com"
+                    required
+                  />
+                </div>
+                <div class="input_group">
+                  <label for="subject">Assunto:</label>
+                  <input type="text" name="subject" id="subject" required />
+                </div>
+                <div class="input_group">
+                  <label for="message">Mensagem:</label>
+                  <textarea name="message" id="message" required></textarea>
+                </div>
+                <input type="hidden" name="_captcha" value="false" />
+                <!-- <input
+                  type="hidden"
+                  name="_next"
+                  value="http://127.0.0.1/obrigado.html"
+                /> -->
+                <button class="btn" type="submit">Enviar</button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer__bg">
+        <div class="footer container">
+          <span class="copyright"
+            >Feito com ❤️ por
+            <a href="https://www.linkedin.com/in/gabriel-arandaa/" target="_blank"
+              >Gabriel Aranda</a
+            >
+            - 2024</span
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
