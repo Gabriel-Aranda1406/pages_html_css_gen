@@ -68,8 +68,8 @@
                   target="_blank"
                   >Github</a
                 >
-                <span id="followers">66 Seguidores</span>
-                <span id="repositories">48 Repositórios</span>
+                <span id="followers">29 Seguidores</span>
+                <span id="repositories">30 Repositórios</span>
               </div>
             </div>
             <div class="about__image">
@@ -131,42 +131,38 @@
               </address>
             </div>
             <div class="contact__form">
-              <form
-                action="https://formsubmit.co/gabriel.aranda@hotmail.com"
-                method="POST"
-                class="form"
-              >
-                <div class="input_group">
-                  <label for="name">Nome:</label>
-                  <input type="text" name="name" id="name" required />
-                </div>
-                <div class="input_group">
-                  <label for="email">Email:</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="fulano@email.com"
-                    required
-                  />
-                </div>
-                <div class="input_group">
-                  <label for="subject">Assunto:</label>
-                  <input type="text" name="subject" id="subject" required />
-                </div>
-                <div class="input_group">
-                  <label for="message">Mensagem:</label>
-                  <textarea name="message" id="message" required></textarea>
-                </div>
-                <input type="hidden" name="_captcha" value="false" />
-                <!-- <input
-                  type="hidden"
-                  name="_next"
-                  value="http://127.0.0.1/obrigado.html"
-                /> -->
-                <button class="btn" type="submit">Enviar</button>
+              <form action="https://formsubmit.co/gabriel.aranda@hotmail.com" method="POST" class="form" id="myForm">
+                  <div class="input_group">
+                      <label for="name">Nome:</label>
+                      <input type="text" name="name" id="name" />
+                      <div class="error-message" id="name-error"></div>
+                  </div>
+          
+                  <div class="input_group">
+                      <label for="email">Email:</label>
+                      <input type="email" name="email" id="email" placeholder="fulano@email.com" />
+                      <div class="error-message" id="email-error"></div>
+                  </div>
+          
+                  <div class="input_group">
+                      <label for="subject">Assunto:</label>
+                      <input type="text" name="subject" id="subject" />
+                      <div class="error-message" id="subject-error"></div>
+                  </div>
+          
+                  <div class="input_group">
+                      <label for="message">Mensagem:</label>
+                      <textarea name="message" id="message"></textarea>
+                      <div class="error-message" id="message-error"></div>
+                  </div>
+          
+                  <input type="hidden" name="_captcha" value="false" />
+                  <!-- <input type="hidden" name="_next" value="http://127.0.0.1/obrigado.html" /> -->
+                  <button class="btn" type="submit">Enviar</button>
+                  <div class="success-message" id="success-message" style="display: none;">O formulário foi enviado com sucesso!</div>
               </form>
-            </div>
+          </div>
+          
           </section>
         </div>
       </main>
@@ -182,5 +178,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
